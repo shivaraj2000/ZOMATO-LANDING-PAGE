@@ -83,7 +83,72 @@
         <button class="button__primary">View More</button>
         </div>
     </section>
+    <section class="restaurant__container">
+        <h1 class="restaurant__text">Order From 100s of restaurants</h1>
+        <div class="restaurant__images__container">
+            <div class="restaurant__images__row__one">
+                <div class="restaurant__image__1">
+                    <img src="assets/assets/restaurant1.jpg" alt="restaurant1" class="restaurant__1"/>
+                </div>
+                <div class="restaurant__image__2">
+                    <img src="assets/assets/restaurant2.jpg" alt="restaurant2" class="restaurant__2"/>
+                </div>
+            </div>
+            <div class="restaurant__images__row__two">
+                <div class="restaurant__image__3">
+                    <img src="assets/assets/restaurant3.jpg" alt="restaurant3" class="restaurant__3"/>
+                </div>
+                <div class="restaurant__image__4">
+                    <img src="assets/assets/restaurant4.jpg" alt="restaurant4" class="restaurant__4"/>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<section class="email__subcribe__container">
+  <div>
+    <h1 class="text-xl">Stay Updated</h1>
+    <div class="email__subcribe__input__field">
+      <div>
+        <input
+          type="email"
+          placeholder="email@email.com"
+          class="email__input"
+        />
+      </div>
+      <button class="button__primary">Get Updates</button>
+    </div>
+  </div>
+</section>
+
+<section class="quote__container">
+    <div class="quote_image_overlay"></div>
+    <h3 class="quote_image_text">
+      When a man's stomach is full it makes no difference whether he is rich
+      or poor.
+    </h3>
     </main>
+    <footer>
+        <img src="./assets/assets/logo.png" alt="logo" />
+        <ul>
+          <li>Pricing</li>
+          <li>Terms and condition</li>
+          <li>Partnership</li>
+          <li>Career</li>
+          <li>Contact</li>
+        </ul>
+      </footer>
+      <script>
+        const hamburgermenu = document.getElementById("hamburgermenu");
+        const mobileNavDropDown = document.querySelector(
+          ".mobile__navbar__items"
+        );
+        window.addEventListener("click", () => {
+          if (mobileNavDropDown.classList.contains("hamburger__menu__close"))
+            return mobileNavDropDown.classList.remove("hamburger__menu__close");
+          return mobileNavDropDown.classList.add("hamburger__menu__close");
+        });
+      </script>
     
 </body>
 </html>
